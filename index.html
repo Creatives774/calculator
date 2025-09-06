@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>All Calculators</title>
+  <style>
+    body {
+      margin:0;
+      font-family: "Segoe UI", Tahoma, sans-serif;
+      background: linear-gradient(180deg,#eef6ff,#ffffff);
+      color:#0b2b4a;
+    }
+    header {
+      padding:20px;
+      text-align:center;
+      background:#0b63d6;
+      color:white;
+    }
+    header h1 { margin:0; font-size:28px; }
+    header p { margin:4px 0 0; font-size:14px; opacity:0.9; }
+
+    .container {
+      max-width:1100px;
+      margin:30px auto;
+      padding:0 20px;
+    }
+
+    .grid {
+      display:grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
+      gap:20px;
+    }
+
+    .card {
+      background:white;
+      border-radius:14px;
+      padding:20px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+      text-align:center;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 22px rgba(0,0,0,0.12);
+    }
+    .card h2 {
+      font-size:18px;
+      margin:0 0 10px;
+    }
+    .card p {
+      font-size:13px;
+      color:#35516e;
+      margin:0 0 14px;
+    }
+    .card a {
+      display:inline-block;
+      padding:8px 14px;
+      border-radius:8px;
+      background:#0b63d6;
+      color:white;
+      font-size:14px;
+      font-weight:600;
+      text-decoration:none;
+      transition: background 0.2s;
+    }
+    .card a:hover {
+      background:#084aad;
+    }
+
+    footer {
+      text-align:center;
+      padding:20px;
+      font-size:13px;
+      color:#476080;
+      margin-top:40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>All-in-One Calculators</h1>
+    <p>Quick & easy tools for everyday problem solving</p>
+  </header>
+
+  <div class="container">
+    <div class="grid">
+      <!-- Age Calculator -->
+      <div class="card">
+        <h2>Age Calculator</h2>
+        <p>Find your exact age in years, months, and days.</p>
+        <a href="age-calculator.html">Open</a>
+      </div>
+
+      <!-- BMI Calculator -->
+      <div class="card">
+        <h2>BMI Calculator</h2>
+        <p>Check your Body Mass Index for a healthy lifestyle.</p>
+        <a href="bmi-calculator.html">Open</a>
+      </div>
+
+      <!-- Loan Calculator -->
+      <div class="card">
+        <h2>Loan Calculator</h2>
+        <p>Calculate EMI, interest, and repayment schedule.</p>
+        <a href="loan-calculator.html">Open</a>
+      </div>
+
+      <!-- Currency Converter -->
+      <div class="card">
+        <h2>Currency Converter</h2>
+        <p>Convert currencies instantly with real-time rates.</p>
+        <a href="currency-converter.html">Open</a>
+      </div>
+
+      <!-- GST Calculator -->
+      <div class="card">
+        <h2>GST Calculator</h2>
+        <p>Compute GST amounts with ease for India.</p>
+        <a href="gst-calculator.html">Open</a>
+      </div>
+
+      <!-- Add more calculators here -->
+    </div>
+  </div>
+
+  <footer>
+    Built with ❤️ — All Calculators Hub
+  </footer>
+</body>
+</html>
